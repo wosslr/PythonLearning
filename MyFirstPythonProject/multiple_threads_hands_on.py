@@ -55,9 +55,9 @@ class Gamer(Thread):
                 print "Gamer%d has wager %d as game number\n" % (self.ID, x),
                 print "Now the game flag is %s \n" % gameFlag,
                 if x == winningNum:
-                    cashPool -= 5
+                    cashPool -= 10
                     print "As winning number is %d \n" % winningNum,
-                    print "Gamer%d has won 5 USD from cash pool\n" % self.ID,
+                    print "Gamer%d has won 10 USD from cash pool\n" % self.ID,
                 else:
                     cashPool += 10
                     print "As winning number is %d \n" % winningNum,

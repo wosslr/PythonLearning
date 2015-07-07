@@ -17,7 +17,11 @@ def load_url(url):
   
   src = urllib2.urlopen(url)  
   
-  return src.read()  
+  html = src.read()
+  
+  html = unicode(html, "gb2312").encode("utf-8")
+  
+  return html  
       
 if __name__=='__main__':  
-  print load_url("http://www.baidu.com")
+  print load_url("http://www.weibo.com/u/2296355702")
